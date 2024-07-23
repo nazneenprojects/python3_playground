@@ -50,3 +50,5 @@ def http_error(status):
             return "Not found"
         case _:
             return "Something wrong"
+
+
