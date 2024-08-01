@@ -1,4 +1,8 @@
 def sqr(n):
+    """
+
+    :rtype: object
+    """
     print("The square of given number ", n, "is :")
     return lambda: n ** 2
 
