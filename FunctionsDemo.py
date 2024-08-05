@@ -35,3 +35,21 @@ def f(arg=i):
 
 
 i = 6
+
+
+
+def f1(a, L=[]):
+    L.append(a)
+    return L
+
+def f2(a, L=""):
+    L = a
+    return L
+
+
+print(f1("ham"))
+print(f1("burg"))
+
+
+print(f2("naz"))
+print(f2("neen"))
