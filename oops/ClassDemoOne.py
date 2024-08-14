@@ -14,15 +14,33 @@ class DemoClassOne:
     """
     A Simple class to demo attribute references and instantiation
     """
-    i = 12345
+
+    def __init__(self):
+        self.data = []
+
+    i = 12345  # class variable
 
     def f(self):
         return 'hello world'
 
 
-print(DemoClass.i)
-print(DemoClass.f)
-print(DemoClass.f("hey"))
-x = DemoClass
-print(x)
+if __name__ == "__main__":
+    # Attribute reference
+    print(".........Attribute reference................")
+    print(DemoClassOne.i)
+    #method object, not a function object.
+    print(DemoClassOne.f)
+    print(DemoClassOne.f("hey"))
+
+    # class instantiation
+    print("............class instantiation.......")
+    x = DemoClassOne()
+    print(x)
+    print(x.i)
+    y = x.f()
+    print(y)
+
+
+
+
 
