@@ -14,7 +14,7 @@ for key, element in {'a': 1, 'b': 2, 'c': 3}.items():
 for char in "123":
     print(char)
 
-for line in open("../inputoutput/example.txt"):
+for line in open("../input_output/example.txt"):
     print(line, end='' )
     print("\n")
 

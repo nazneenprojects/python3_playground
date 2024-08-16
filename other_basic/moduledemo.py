@@ -1,4 +1,5 @@
-import fibo
+from loops_controls import fibo
+
 fib = fibo.fib
 dir()
 ['__builtins__', '__name__', 'a', 'fib', 'fibo', 'sys']

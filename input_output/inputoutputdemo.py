@@ -118,13 +118,13 @@ import math
 print('The value of Pi is approx %10.5f.' % math.pi)
 
 # file IO
-f = open('/home/zermatt/Documents/python/inputoutput/workfile1', 'w', encoding='utf-8')
+f = open('/input_output/workfile1', 'w', encoding='utf-8')
 f.write("""Success is getting what you want..
 Happiness is wanting what you get.""")
 
 f.close()
 
-with open('/home/zermatt/Documents/python/inputoutput/workfile', encoding='utf-8') as myfile:
+with open('/input_output/workfile', encoding='utf-8') as myfile:
     # read_data = myfile.read()
     read_data = myfile.readline()
     print("workfile  content ->> \n", read_data)
@@ -133,7 +133,7 @@ if (myfile.closed):
     print("file is closed!")
     #myfile.read()
 
-secretfile = open('/home/zermatt/Documents/python/inputoutput/secret', 'w', encoding='utf-8')
+secretfile = open('/input_output/secret', 'w', encoding='utf-8')
 secretfile.write("""Actions speak louder than words, and a smile says, ‘I like you. You make me happy. I am glad to see you.’ That is why dogs make such a hit. They are so glad to see us that they almost jump out of their skins. So, naturally, we are glad to see them.”
 ― Dale Carnegie, """)
 
@@ -153,17 +153,17 @@ print("\n objects need to be converted from tuple to sTring  :")
 value = ('the answer', 42)
 s = str(value)
 #print(s)
-with open('/home/zermatt/Documents/python/inputoutput/secret', 'w', encoding='utf-8') as secretfile:
+with open('/input_output/secret', 'w', encoding='utf-8') as secretfile:
     secretfile.write(s)
 
-with open('/home/zermatt/Documents/python/inputoutput/secret', 'r', encoding='utf-8') as secretfile:
+with open('/input_output/secret', 'r', encoding='utf-8') as secretfile:
     data = secretfile.readlines()
     #print(data)
     #returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.
     print(secretfile.tell())
 
 #change the byte in the file
-f = open('/home/zermatt/Documents/python/inputoutput/workfile', 'rb+')
+f = open('/input_output/workfile', 'rb+')
 f.write(b'0123456789abcdef')
 # Seek to the 5th byte from the beginning
 print(f.seek(5))  # Output: 5
@@ -203,25 +203,25 @@ with open('example.txt', 'w', encoding='utf-8') as f:
     f.write('This is a test file with some initial content.')
 
 # Read and print the initial content of the file
-with open('/home/zermatt/Documents/python/inputoutput/example.txt', 'r', encoding='utf-8') as f:
+with open('/input_output/example.txt', 'r', encoding='utf-8') as f:
     print("Initial content:")
     print(f.read())
 
 # Truncate the file to 10 bytes
-with open('/home/zermatt/Documents/python/inputoutput/example.txt', 'r+') as f:
+with open('/input_output/example.txt', 'r+') as f:
     f.truncate(10)
 
 # Read and print the content after truncation
-with open('/home/zermatt/Documents/python/inputoutput/example.txt', 'r', encoding='utf-8') as f:
+with open('/input_output/example.txt', 'r', encoding='utf-8') as f:
     print("\nContent after truncation to 10 bytes:")
     print(f.read())
 
 # Truncate the file to a larger size (25 bytes)
-with open('/home/zermatt/Documents/python/inputoutput/example.txt', 'r+') as f:
+with open('/input_output/example.txt', 'r+') as f:
     f.truncate(25)
 
 # Read and print the content after extending
-with open('/home/zermatt/Documents/python/inputoutput/example.txt', 'r', encoding='utf-8') as f:
+with open('/input_output/example.txt', 'r', encoding='utf-8') as f:
     print("\nContent after extending to 25 bytes:")
     print(f.read())
 

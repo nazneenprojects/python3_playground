@@ -14,11 +14,11 @@ data = {
 json_data = json.dumps(data)
 
 # Pickle the JSON string
-with open('/home/zermatt/Documents/python/inputoutput/jsonpickle/data.pkl', 'wb') as f:
+with open('/input_output/jsonpickle/data.pkl', 'wb') as f:
     pickle.dump(json_data, f)
 
 # Unpickle the JSON string from the file
-with open('/home/zermatt/Documents/python/inputoutput/jsonpickle/data.pkl', 'rb') as f:
+with open('/input_output/jsonpickle/data.pkl', 'rb') as f:
     json_data = pickle.load(f)
 
 # Convert the JSON string back to a Python object

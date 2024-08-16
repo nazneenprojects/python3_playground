@@ -1,6 +1,6 @@
 # This is a sample Python script.
-from ArrowPrint import printarrow
-from Literals import printing_literals
+from literals import printing_literals
+from arrow_print import printarrow
 
 
 # Press Shift+F10 to execute it or replace it with your code.
