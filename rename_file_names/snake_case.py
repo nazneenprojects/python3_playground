@@ -5,7 +5,7 @@ def camel_to_snake(name):
     s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
     return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
 
-directory = '/home/zermatt/Documents/python'
+directory = '/home/user/Documents/python'
 
 for root, dirs, files in os.walk(directory):
     for filename in files:

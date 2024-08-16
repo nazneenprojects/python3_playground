@@ -13,7 +13,7 @@ NameError: Moin! Moin!
 # shorthand for 'raise ValueError()'
 """
 Traceback (most recent call last):
-  File "/home/zermatt/Documents/python/errors_exception/raiseexceptiondemo.py", line 12, in <module>
+  File "/home/userS/Documents/python/errors_exception/raiseexceptiondemo.py", line 12, in <module>
     raise ValueError
 ValueError
 """

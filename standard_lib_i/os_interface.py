@@ -2,7 +2,7 @@ import os
 import shutil                                            # daily file and directory management tasks
 
 print(os.getcwd())                                       # return current workign dir
-print(os.chdir('/home/zermatt/Documents/python'))        # Change current working directory
+print(os.chdir('/home/user/Documents/python'))        # Change current working directory
 print(os.system('mkdir today'))                          # Run the command mkdir in the system shell
 print(os.chdir('/standard_lib_i'))
 
