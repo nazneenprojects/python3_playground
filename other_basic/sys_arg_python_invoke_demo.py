@@ -6,8 +6,15 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 name = sys.argv[1]
+temp = sys.argv[0]
 
-print(f"Hello, {name}!")
+print(f"Hello, {name}!,  {temp}")
+
+
+"""
+    Run this program by using -
+    python sys_arg_python_invoke_demo.py Flounder
+"""
 
 
 
