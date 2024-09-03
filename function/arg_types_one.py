@@ -29,7 +29,7 @@ fruits(b = 'banana', p = 'pineapple', a = 'apple')
 fruits('apple', b = 'banana', p = 'pineapple')
 
 
-# Python *args allows a function to accept any number of positional arguments i.e. arguments which are non-keyword arguments, variable-length argument list.
+# Python *args allows a function to accept any number of positional arguments i.e variable-length argument list.
 
 # Program to add and display sum of n number of integer
 def add(*num):
