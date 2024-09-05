@@ -39,3 +39,33 @@ def greet(**info):
         print(f"{key}: {value}")
 
 greet(name="Hank", age=40, city="NYC")  # Can pass any number of keyword arguments
+
+
+# Function with default, required, and optional arguments
+def book_order(title, author, copies=1, discount=None):
+    """
+    Arguments:
+    - title (required): The title of the book
+    - author (required): The author of the book
+    - copies (default=1): The number of copies to order (default value is 1)
+    - discount (optional): Discount on the total price (optional)
+    """
+    
+    price_per_copy = 20  # Example price per book copy
+    total_price = price_per_copy * copies
+    
+    # Apply discount if provided (optional argument)
+    if discount:
+        total_price = total_price - (total_price * (discount / 100))
+    
+    print(f"Order Details:\nBook: {title}\nAuthor: {author}\nCopies: {copies}\nTotal Price: ${total_price:.2f}\n")
+
+# Required arguments only (title and author)
+book_order("1984", "George Orwell")
+
+# Required + default argument (copies)
+book_order("Brave New World", "Aldous Huxley", 3)
+
+# Required + default + optional argument (discount)
+book_order("Fahrenheit 451", "Ray Bradbury", 5, 10)
+
