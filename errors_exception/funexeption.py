@@ -5,7 +5,7 @@ def my_data():
     data = int('abs')
 
 try:
-    #this_fails()
+    this_fails()
     my_data()
 except ZeroDivisionError as err:
     print('Handling run time error:', err)
@@ -16,3 +16,8 @@ else :
 
 
 
+
+# try:
+#     raise OSError
+# except OSError as ex:
+#     raise RuntimeError from ex

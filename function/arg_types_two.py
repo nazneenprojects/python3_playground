@@ -39,3 +39,12 @@ def greet(**info):
         print(f"{key}: {value}")
 
 greet(name="Hank", age=40, city="NYC")  # Can pass any number of keyword arguments
+
+# Required argument : name
+# typically comes first in the parameter list and has no default value
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice")  # This works fine. bcz name is required argument in greet function
+greet()         # This raises a TypeError because the 'name' argument is missing.
+

@@ -23,6 +23,7 @@ ValueError
 # exception raised but dont intent to handle it
 try:
     raise NameError('Hi There')
+    # ans =  2/0
 except NameError:
     print('An exception flew by')
     raise
